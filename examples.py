@@ -10,7 +10,7 @@ This example demonstrates:
 
 import numpy as np
 import matplotlib.pyplot as plt
-from multivariate_regression import (
+from Multivariate_regression import (
     generate_synthetic_data,
     multivariate_ols,
     bootstrapped_multivariate_regression,

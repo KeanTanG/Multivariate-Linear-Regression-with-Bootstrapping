@@ -10,13 +10,6 @@ A Python implementation of multivariate linear regression with bootstrapping usi
 - **Synthetic Data Generation**: Generate test datasets for experimentation
 - **Visualization**: Plot coefficient estimates with confidence intervals and bootstrap distributions
 
-## Installation
-
-Install the required dependencies:
-
-```bash
-pip install -r requirements.txt
-```
 
 ## Quick Start
 
