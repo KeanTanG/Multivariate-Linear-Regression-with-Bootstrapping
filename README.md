@@ -64,7 +64,7 @@ This will run a complete demonstration including:
 ### Running Examples
 
 ```bash
-python example.py
+python examples.py
 ```
 
 This includes multiple examples:
