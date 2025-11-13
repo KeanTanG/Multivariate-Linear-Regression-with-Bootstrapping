@@ -183,10 +183,11 @@ def bootstrapped_multivariate_regression(
     for j in range(n_features):
         for k in range(n_responses):
             bootstrap_coefs = bootstrap_coefficients[:, j, k]
-            # Proportion of bootstrap coefficients with opposite sign of mean
-            prop_opposite = np.mean(bootstrap_coefs * mean_coefficients[j, k] < 0)
+            # Proportion of bootstrap coefficients <=0 and >=0
+            prop_small = np.mean(bootstrap_coefs <= 0)
+            prop_big = np.mean(bootstrap_coefs >= 0)
             # Two-tailed p-value
-            p_values[j, k] = 2 * min(prop_opposite, 1 - prop_opposite)
+            p_values[j, k] = 2 * min(prop_small, prop_big)
 
     return {
         'coefficients': mean_coefficients,
