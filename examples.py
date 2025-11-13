@@ -201,7 +201,7 @@ def example_small_sample():
     Example with small sample size to see difference between methods.
     """
     print("\n" + "=" * 70)
-    print("EXAMPLE 3: Small Sample Size (n=30)")
+    print("EXAMPLE 3: Small Sample Size")
     print("=" * 70)
 
     # Generate data with small sample size
