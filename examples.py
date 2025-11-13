@@ -132,7 +132,7 @@ def example_basic_usage():
 
     # Generate data
     X, Y, true_coefficients = generate_synthetic_data(
-        n_samples=100,
+        n_samples=1000,
         n_features=4,
         n_responses=2,
         noise_std=0.5,
@@ -165,7 +165,7 @@ def example_with_visualization():
 
     # Generate data with more features
     X, Y, true_coefficients = generate_synthetic_data(
-        n_samples=150,
+        n_samples=1500,
         n_features=5,
         n_responses=3,
         noise_std=1.0,
@@ -206,7 +206,7 @@ def example_small_sample():
 
     # Generate data with small sample size
     X, Y, true_coefficients = generate_synthetic_data(
-        n_samples=30,
+        n_samples=300,
         n_features=4,
         n_responses=2,
         noise_std=1.5,
